@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router';
 import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
-// import VueCarousel from 'vue-carousel';
+import VueCarousel from 'vue-carousel';
 
 const CHARACTERS_QUERY = gql`
   query Characters {
