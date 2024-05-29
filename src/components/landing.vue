@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router';
 import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
-import VueCarousel from 'vue-carousel';
+// import VueCarousel from 'vue-carousel';
 
 const CHARACTERS_QUERY = gql`
   query Characters {
@@ -136,14 +136,14 @@ export default {
         <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/characters">Characters</a></li>
         <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/locations">Locations</a></li>
       </ul>
-      <!-- Add this dropdown menu -->
+     
       <div v-if="isMenuOpen" class="absolute top-12 right-4 bg-white text-black rounded-lg shadow-lg p-4">
         <p class="text-lg font-bold">Rebika Yihenew</p>
         <p class="text-sm mt-2">GitHub: <a href="https://github.com/Soloparame/Project.git" class="text-blue-500 hover:underline">View Github</a></p>
         <p class="text-sm mt-2">Figma: <a href="https://www.figma.com/design/zRYAkx5yLpDFflh3jrO7CS/Untitled?node-id=0-1&t=t7iNwkwfRH7wuepM-0" class="text-blue-500 hover:underline">View Design</a></p>
       </div>
     </nav>
-    <vue-carousel>
+    
       <header class="relative h-screen bg-cover bg-center" :style="{ 'background-image': 'url(' + currentImageUrl + ')' }">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 flex items-start justify-between h-full p-8">
@@ -159,7 +159,7 @@ export default {
           </div>
         </div>
       </header>
-    </vue-carousel>
+   
     <main class="p-8 flex-grow">
       <section id="characters" class="mb-8">
         <h2 class="text-3xl font-bold mb-4 text-red-500">Characters</h2>
