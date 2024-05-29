@@ -62,8 +62,8 @@ export default {
       currentImageIndex: 0,
       imageUrls: [
         "/images/1741ea7b74b89b3750858296138b1d90.jpg", 
-        "/images/rick-morty.avif",
-        "/images/ZDLEN74CD5HVLNMVM2PKASNIJA.avif"
+        // "/images/rick-morty.avif",
+        // "/images/ZDLEN74CD5HVLNMVM2PKASNIJA.avif"
       ],
       showMoreCharacters: false,
       showMoreLocations: false,
