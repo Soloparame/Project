@@ -131,10 +131,10 @@ export default {
         </svg>
       </button>
       <ul class="flex space-x-2 text-sm">
-        <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/">Home</a></li>
-        <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/episodes"> Episodes</a></li>
-        <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/characters">Characters</a></li>
-        <li><a class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors" href="/locations">Locations</a></li>
+        <li> <router-link :to="'/' " class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors">Home</router-link></li>
+        <li> <router-link :to="'/Episodes' " class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors"> Episodes</router-link></li>
+        <li> <router-link :to="'/characters' " class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors">Characters</router-link></li>
+        <li> <router-link :to="'/Locations' " class="rounded-full px-3 py-2 border border-red-500 flex items-center justify-center text-white hover:bg-red-500 transition-colors">Locations</router-link></li>
       </ul>
      
       <div v-if="isMenuOpen" class="absolute top-12 right-4 bg-white text-black rounded-lg shadow-lg p-4">
